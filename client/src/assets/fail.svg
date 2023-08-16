@@ -1,0 +1,104 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#007BFF" />
+
+  <!-- Book icon -->
+  <g id="book-icon">
+    <rect
+      x="64.5"
+      y="58.5"
+      width="71"
+      height="84"
+      rx="8.5"
+      fill="#FFF"
+    />
+    <rect
+      x="58.5"
+      y="96.5"
+      width="8"
+      height="46"
+      rx="4"
+      fill="#007BFF"
+    />
+    <path
+      d="M58.5 96.5V48a8 8 0 018-8h71a8 8 0 018 8v48"
+      stroke="#007BFF"
+      stroke-width="2"
+    />
+  </g>
+
+  <!-- Quill icon -->
+  <g id="quill-icon">
+    <path
+      d="M102.5 92.5L80.5 64.5L71.5 73.5L94.5 102.5L114.5 92.5L102.5 92.5Z"
+      fill="#FFF"
+    />
+    <path
+      d="M89 89L110 110"
+      stroke="#FFF"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <path
+      d="M76 76L98 97"
+      stroke="#FFF"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- Knowledge icon -->
+  <g id="knowledge-icon">
+    <path
+      d="M139.5 78.5H129.5C123.215 78.5 118.5 73.785 118.5 67.5V57.5"
+      stroke="#FFF"
+      stroke-width="2"
+    />
+    <path
+      d="M60.5 78.5H70.5C76.7854 78.5 81.5 73.785 81.5 67.5V57.5"
+      stroke="#FFF"
+      stroke-width="2"
+    />
+    <circle
+      cx="118.5"
+      cy="137.5"
+      r="7.5"
+      fill="#FFF"
+    />
+    <circle
+      cx="81.5"
+      cy="137.5"
+      r="7.5"
+      fill="#FFF"
+    />
+    <path
+      d="M129.5 137.5H139.5"
+      stroke="#FFF"
+      stroke-width="2"
+    />
+    <path
+      d="M52.5 100.5H147.5"
+      stroke="#FFF"
+      stroke-width="2"
+    />
+    <path
+      d="M76.5 110L86.5 137.5L96.5 110"
+      stroke="#FFF"
+      stroke-width="2"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Grouping of icons -->
+  <g id="icon-group" fill="#FFF">
+    <use xlink:href="#book-icon" />
+    <use xlink:href="#quill-icon" transform="translate(10, 45)" />
+    <use xlink:href="#knowledge-icon" transform="translate(5, 80)" />
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  /* font-family: 'Merriweather' */
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./fonts/Merriweather/Merriweather-Light.ttf'),
+}
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('./fonts/Amiri/Amiri-Regular.ttf'),
+}
+
+@font-face {
+  font-family: 'Rob';
+  src: url('./fonts/Roboto/Roboto-Regular.ttf'),
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf'),
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-ExtraBold.ttf')
+}

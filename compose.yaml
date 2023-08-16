@@ -1,0 +1,47 @@
+services:
+  client:
+    container_name: blog-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    networks:
+      - web
+    ports:
+      - '5173:5173'
+    depends_on:
+      - server
+  server:
+    container_name: blog-server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    networks:
+      - web
+    environment:
+      - SPRING_DATASOURCE_URL=${database_url}
+      - SPRING_DATASOURCE_USERNAME=${username}
+      - SPRING_DATASOURCE_PASSWORD=${password}
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgresDB
+  postgresDB:
+    container_name: blog-database
+    image: postgres
+    networks:
+      - web
+    environment:
+      POSTGRES_PASSWORD: ${password}
+      POSTGRES_USER: ${username}
+    ports:
+      - '5332:5432'
+    restart: unless-stopped
+    volumes:
+      - db:/var/lib/postgresql/data
+
+networks:
+  web:
+    driver: bridge
+
+volumes:
+  db:
